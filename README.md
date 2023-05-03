@@ -1,8 +1,11 @@
 # Artist-Microservice
+
 CS 361 Random Artist Microservice
 
 ## Requesting Data
+
 Request
+
 ```
 export MUSIC_MAX_API_KEY= <insert API key here>
 python random_artist.py
@@ -10,17 +13,22 @@ http://localhost:4000/random_artist
 ```
 
 ## Receiving Data
-Navigate to `http://localhost:4000/random_artist` and you should get the response. 
-* Since this API has not been deployed, there is no external URL. 
-To use this on flask you would do something like:
 
-def get_artist() 
-  url = 'http://localhsot:4000/random_artist'
+Navigate to `http://localhost:4000/random_artist` and you should get the response.
+
+- Since this API has not been deployed, there is no external URL.
+  To use this on flask you would do something like:
+
+```
+def get_artist()
+  url = 'http://localhost:4000/random_artist' #url here to be replaced by external URL once deployed
   response = urllib.request.urlopen(url)
   data = response.read()
   return json.loads(data) # this can be modified to respond specific attributes
+```
 
 ## Sample response below:
+
 ```
 {
   "message": {
