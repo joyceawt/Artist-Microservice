@@ -4,7 +4,7 @@ CS 361 Random Artist Microservice
 
 ## Requesting Data
 
-Request
+Export the API key, then run the server and navigate to the appropriate URL as specified below:
 
 ```
 export MUSIC_MAX_API_KEY= <insert API key here>
@@ -73,3 +73,7 @@ def get_artist()
   }
 }
 ```
+
+## UML diagram
+
+![UML Diagram](UML-diagram.png)
